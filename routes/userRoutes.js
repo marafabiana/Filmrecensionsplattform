@@ -7,12 +7,12 @@ const checkAuth = require('../middlewares/checkAuth');
 
 
 //2 Endpoints:
-//Private Route /user/:id
+// Private Route /user/:id
 router.get('/user/:id', checkAuth, async (req, res) => {
 
     const id = req.params.id
 
-    //check id user exists
+    // check id user exists
     const user = await User.findById(id, '-password')
 
     if(!user) {
@@ -23,11 +23,11 @@ router.get('/user/:id', checkAuth, async (req, res) => {
 });
 
 
-//Register User /register
+// Register User /register
 router.post('/register', async (req, res) => {
     const { username, email, password, confirmpassword } = req.body;
 
-    //validations
+    // validations
     if(!username) {
         res.status(422).json({message: 'The username is required'});
         return
@@ -48,7 +48,7 @@ router.post('/register', async (req, res) => {
         return
     }
 
-    //check if user exists - using query
+    // check if user exists - using query
     const userExists = await User.findOne({ email: email })
 
     if(userExists) {
@@ -56,11 +56,11 @@ router.post('/register', async (req, res) => {
         return  
     }
 
-    //create password
+    // create password
     const salt = await bcrypt.genSalt(12)
     const passwordHash = await bcrypt.hash(password, salt)
 
-    //create user
+    // create user
     const user = new User({
         username,
         email,
@@ -81,12 +81,12 @@ router.post('/register', async (req, res) => {
 
 });
 
-//Login User /login
+// Login User /login
 router.post('/login', async (req, res) => {
 
     const {email, password} = req.body 
 
-    //validations
+    // validations
     if(!email) {
         res.status(422).json({message: 'The email is required'});
         return
@@ -97,7 +97,7 @@ router.post('/login', async (req, res) => {
         return
     }
 
-    //check if user exists
+    // check if user exists
     const user = await User.findOne({ email: email })
 
     if(!user) {
@@ -105,7 +105,7 @@ router.post('/login', async (req, res) => {
         return  
     }
 
-    //check if password match
+    // check if password match
     const checkPassword = await bcrypt.compare(password, user.password)
 
     if(!checkPassword) {

@@ -1,11 +1,11 @@
-//1 Imports
+// 1 Imports
 const express = require("express"); //
 const router = require("express").Router();
 const Movie = require("../models/movie");
 const Review = require("../models/review");
 const checkAuth = require("../middlewares/checkAuth");
 
-//2 Endpoints
+// 2 Endpoints
 // POST /movies
 router.post("/movies", checkAuth, async (req, res) => {
   const { title, director, releaseYear, genre } = req.body;
