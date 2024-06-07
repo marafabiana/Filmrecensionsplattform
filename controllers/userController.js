@@ -2,7 +2,7 @@ const User = require('../models/user');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 
-//Register User /register
+//POST /register
 exports.registerUser = async (req, res) => {
   const { username, email, password, confirmpassword } = req.body;
 
@@ -54,7 +54,7 @@ if(password !== confirmpassword) {
   }
 };
 
-// Login User /login
+// POST /login
 exports.loginUser = async (req, res) => {
   const { email, password } = req.body;
   
