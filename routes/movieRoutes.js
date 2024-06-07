@@ -7,13 +7,13 @@ const checkAuth = require("../middlewares/checkAuth");
 
 // 2 Endpoints
 // POST /movies
-router.post("/movies", checkAuth, async (req, res) => {
+router.post('/movies', checkAuth, async (req, res) => {
   const { title, director, releaseYear, genre } = req.body;
   const userId = req.user.id;
 
+
   if (!title || !director || !releaseYear || !genre) {
-    console.log("Missing fields in request body");
-    return res.status(422).json({ message: "All fields are required" });
+    return res.status(422).json({ message: 'All fields are required' });
   }
 
   const movie = new Movie({
@@ -26,10 +26,9 @@ router.post("/movies", checkAuth, async (req, res) => {
 
   try {
     await movie.save();
-    res.status(201).json({ message: "Movie added successfully", movie });
+    res.status(201).json({ message: 'Movie created successfully', movie });
   } catch (error) {
-    console.error("Error creating movie:", error);
-    res.status(500).json({ message: "Server error, try again later" });
+    res.status(500).json({ message: 'Server error, try again later' });
   }
 });
 

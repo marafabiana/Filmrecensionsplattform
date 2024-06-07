@@ -15,12 +15,12 @@ app.get('/', (req, res) => {
     res.status(200).json({ message: "Welcome to the API!" })
 });
 
-// 8 Import userRoutes
+// 8 Import Routes
 const userRoutes = require('./routes/userRoutes');
 const movieRoutes = require('./routes/movieRoutes');
 const reviewRoutes = require('./routes/reviewRoutes')
 
-// 9 Use userRoutes
+// 9 Use Routes
 app.use('/', userRoutes);
 app.use('/', movieRoutes);
 app.use('/', reviewRoutes)
@@ -40,5 +40,5 @@ mongoose
 .catch((err) => console.log(err));
 
 // 4 Create a new project in MongoDB and put a username and password in the .env file
-// 6 Create user.js
-// 7 Create userRoutes.js
+// 6 Create models
+// 7 Create routes

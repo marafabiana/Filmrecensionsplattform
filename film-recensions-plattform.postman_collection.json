@@ -13,7 +13,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"username\": \"Jane Doe\",\n    \"email\": \"jane@doe.com\",\n    \"password\": \"test123\",\n    \"confirmpassword\": \"test123\"\n   \n    \n    \n    \n    \n    \n    \n   \n}",
+					"raw": "{\n    \"username\": \"John Doe\",\n    \"email\": \"john@doe.com\",\n    \"password\": \"test123\",\n    \"confirmpassword\": \"test123\"\n    \n   \n    \n    \n    \n    \n    \n    \n   \n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -49,7 +49,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"email\": \"jane@doe.com\",\n    \"password\": \"test123\"\n}",
+					"raw": "{\n    \"email\": \"john@doe.com\",\n    \"password\": \"test123\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -76,7 +76,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjFjZThjYWJkMDM2NWZkOGMyYThmYiIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzE3Njg1OTE1fQ._hIVW-ZFfzTVtnKyhOHI4jMhq2OuzN2pkVXyFG_6pWc",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjJjNzZiODA1ZjU3ZWRmMzg3YTcwMCIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzE3NzQ5NjIyfQ.WYMlGpUA_8D1DsVJMgYpRq-KhMWogjxdCJCrGCR-01U",
 							"type": "string"
 						}
 					]
@@ -85,7 +85,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"title\": \"Woody Woodpecker\",\n    \"director\": \"Alex Zamm\",\n    \"releaseYear\": \"2017\",\n    \"genre\": \"Comedy\"\n    \n\n    \n    \n    \n}",
+					"raw": "{\n    \"title\": \"The Penguins of Madagascar\",\n    \"director\": \"Eric Darnell\",\n    \"releaseYear\": \"2014\",\n    \"genre\": \"Comedy\"\n    \n\n    \n    \n    \n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -139,13 +139,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{URL}}/movies/6661d006abd0365fd8c2a8fe",
+					"raw": "{{URL}}/movies/6662c7d9805f57edf387a703",
 					"host": [
 						"{{URL}}"
 					],
 					"path": [
 						"movies",
-						"6661d006abd0365fd8c2a8fe"
+						"6662c7d9805f57edf387a703"
 					]
 				}
 			},
@@ -159,7 +159,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjFjZThjYWJkMDM2NWZkOGMyYThmYiIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzE3Njg1OTE1fQ._hIVW-ZFfzTVtnKyhOHI4jMhq2OuzN2pkVXyFG_6pWc",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjJjNzZiODA1ZjU3ZWRmMzg3YTcwMCIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzE3NzQ5NjIyfQ.WYMlGpUA_8D1DsVJMgYpRq-KhMWogjxdCJCrGCR-01U",
 							"type": "string"
 						}
 					]
@@ -168,7 +168,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"title\": \"The Penguins of Madagascar\",\n    \"director\": \"Tom McGrath and Eric Darnell\",\n    \"releaseYear\": \"2015\",\n    \"genre\": \"Comedy\"\n}",
+					"raw": "{\n    \"title\": \"The Penguins of Madagascar\",\n    \"director\": \"Eric Darnell, Simon J. Smith\",\n    \"releaseYear\": \"2014\",\n    \"genre\": \"Comedy\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -176,13 +176,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{URL}}/movies/6661d006abd0365fd8c2a8fe",
+					"raw": "{{URL}}/movies/6662c7d9805f57edf387a703",
 					"host": [
 						"{{URL}}"
 					],
 					"path": [
 						"movies",
-						"6661d006abd0365fd8c2a8fe"
+						"6662c7d9805f57edf387a703"
 					]
 				}
 			},
@@ -215,7 +215,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjFjZThjYWJkMDM2NWZkOGMyYThmYiIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzE3Njg1OTE1fQ._hIVW-ZFfzTVtnKyhOHI4jMhq2OuzN2pkVXyFG_6pWc",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjJjNjNiODA1ZjU3ZWRmMzg3YTZlZSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzE3NzQ5MzIyfQ.CGbb0DwSIkE1ETT7fgtPBiofvNV8ap_-7Ae6fFpisrg",
 							"type": "string"
 						}
 					]
@@ -223,13 +223,13 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{URL}}/movies/6661d120abd0365fd8c2a905",
+					"raw": "{{URL}}/movies/6662c71a805f57edf387a6f9",
 					"host": [
 						"{{URL}}"
 					],
 					"path": [
 						"movies",
-						"6661d120abd0365fd8c2a905"
+						"6662c71a805f57edf387a6f9"
 					]
 				}
 			},
@@ -243,7 +243,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjFkMTZmYWJkMDM2NWZkOGMyYTkwYiIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzE3Njg2NjQ4fQ.GzhGcUCJRRCdDPWIuwZK7HWa7Dypmqw_0gyZ8cSiwpc",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjJjNzZiODA1ZjU3ZWRmMzg3YTcwMCIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzE3NzQ5NjIyfQ.WYMlGpUA_8D1DsVJMgYpRq-KhMWogjxdCJCrGCR-01U",
 							"type": "string"
 						}
 					]
@@ -252,7 +252,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"movieId\": \"6661d006abd0365fd8c2a8fe\",\n  \"rating\": 10,\n  \"comment\": \"It is funny all the way , never a dull moment . They managed to sneak in touching moments too . These penguins are wily & go-getters . Nobody can mess with them . Kowalski is tech support , skipper is leader (obviously) , rico is worker & private is sincere eager follower . They can and do outwit everybody . I remember in 'madagascar 3' where skipper said 'you only get one chance at first impression' after hippo lady could not break the door . Some people are saying it as hard selling and by-product of successful 'madagascar' franchise . But , this is thoughtfully scripted . Full entertainment for family . Dialogues are glib and mocking .\"\n}",
+					"raw": "{\n  \"movieId\": \"6662c683805f57edf387a6f1\",\n  \"rating\": 1,\n  \"comment\": \"A film without grace and without a well-executed script, an unfortunate montage, a flat photography, nothing innovative, nothing fun and completely a waste in something that many of us who grew up watching the cartoon would have enjoyed if the right decisions had been made, starting with-how the movie was made, and having a better direction.\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -316,13 +316,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{URL}}/reviews/6661d29dabd0365fd8c2a912",
+					"raw": "{{URL}}/reviews/6662c89d805f57edf387a70a",
 					"host": [
 						"{{URL}}"
 					],
 					"path": [
 						"reviews",
-						"6661d29dabd0365fd8c2a912"
+						"6662c89d805f57edf387a70a"
 					]
 				}
 			},
@@ -336,7 +336,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjFkMTZmYWJkMDM2NWZkOGMyYTkwYiIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzE3Njg2NjQ4fQ.GzhGcUCJRRCdDPWIuwZK7HWa7Dypmqw_0gyZ8cSiwpc",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjJjNzZiODA1ZjU3ZWRmMzg3YTcwMCIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzE3NzQ5NjIyfQ.WYMlGpUA_8D1DsVJMgYpRq-KhMWogjxdCJCrGCR-01U",
 							"type": "string"
 						}
 					]
@@ -345,7 +345,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"rating\": \"9.5\",\n    \"comment\": \"It is funny all the way , never a dull moment! They managed to sneak in touching moments too . These penguins are wily & go-getters . Nobody can mess with them . Kowalski is tech support , skipper is leader (obviously) , rico is worker & private is sincere eager follower . They can and do outwit everybody . I remember in 'madagascar 3' where skipper said 'you only get one chance at first impression' after hippo lady could not break the door . Some people are saying it as hard selling and by-product of successful 'madagascar' franchise . But , this is thoughtfully scripted . Full entertainment for family . Dialogues are glib and mocking.\"\n}",
+					"raw": "{\n    \"rating\": \"10\",\n    \"comment\": \"It is funny all the way , never a dull moment! They managed to sneak in touching moments too . These penguins are wily & go-getters . Nobody can mess with them . Kowalski is tech support , skipper is leader (obviously) , rico is worker & private is sincere eager follower . They can and do outwit everybody . Full entertainment for family . Dialogues are glib and mocking.\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -353,13 +353,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{URL}}/reviews/6661d29dabd0365fd8c2a912",
+					"raw": "{{URL}}/reviews/6662c89d805f57edf387a70a",
 					"host": [
 						"{{URL}}"
 					],
 					"path": [
 						"reviews",
-						"6661d29dabd0365fd8c2a912"
+						"6662c89d805f57edf387a70a"
 					]
 				}
 			},
@@ -373,7 +373,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjFjZThjYWJkMDM2NWZkOGMyYThmYiIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzE3Njg1OTE1fQ._hIVW-ZFfzTVtnKyhOHI4jMhq2OuzN2pkVXyFG_6pWc",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjJjNzZiODA1ZjU3ZWRmMzg3YTcwMCIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzE3NzQ5NjIyfQ.WYMlGpUA_8D1DsVJMgYpRq-KhMWogjxdCJCrGCR-01U",
 							"type": "string"
 						}
 					]
@@ -381,13 +381,13 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{URL}}/reviews/6661c63459b79bd78d274021",
+					"raw": "{{URL}}/reviews/6662cb2d80c99430ddbfbb38",
 					"host": [
 						"{{URL}}"
 					],
 					"path": [
 						"reviews",
-						"6661c63459b79bd78d274021"
+						"6662cb2d80c99430ddbfbb38"
 					]
 				}
 			},
