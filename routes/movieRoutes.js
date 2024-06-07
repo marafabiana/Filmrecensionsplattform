@@ -1,5 +1,5 @@
 // 1 Imports
-const express = require("express"); //
+const express = require("express"); 
 const router = require("express").Router();
 const Movie = require("../models/movie");
 const Review = require("../models/review");
