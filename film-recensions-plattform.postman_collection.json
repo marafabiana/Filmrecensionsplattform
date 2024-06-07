@@ -1,0 +1,426 @@
+{
+	"info": {
+		"_postman_id": "1ccfaadf-fa89-4eef-b18b-16ae3d2ec16f",
+		"name": "film-recensions-plattform",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34129895"
+	},
+	"item": [
+		{
+			"name": "/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"Jane Doe\",\n    \"email\": \"jane@doe.com\",\n    \"password\": \"test123\",\n    \"confirmpassword\": \"test123\"\n   \n    \n    \n    \n    \n    \n    \n   \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/register",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/login",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjA1NzM1YjEyMDEzMzRiODk1YmE4OCIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzE3NTg5ODIyfQ.g2BnCdU-t6QXowzjkhEx0D1ArQTSXonA9Yi5D3a_YUc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"jane@doe.com\",\n    \"password\": \"test123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/login",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/movie",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjFjZThjYWJkMDM2NWZkOGMyYThmYiIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzE3Njg1OTE1fQ._hIVW-ZFfzTVtnKyhOHI4jMhq2OuzN2pkVXyFG_6pWc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Woody Woodpecker\",\n    \"director\": \"Alex Zamm\",\n    \"releaseYear\": \"2017\",\n    \"genre\": \"Comedy\"\n    \n\n    \n    \n    \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/movies",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/movies",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/movies",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/movies/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/movies/6661d006abd0365fd8c2a8fe",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"movies",
+						"6661d006abd0365fd8c2a8fe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/movies/:id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjFjZThjYWJkMDM2NWZkOGMyYThmYiIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzE3Njg1OTE1fQ._hIVW-ZFfzTVtnKyhOHI4jMhq2OuzN2pkVXyFG_6pWc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"The Penguins of Madagascar\",\n    \"director\": \"Tom McGrath and Eric Darnell\",\n    \"releaseYear\": \"2015\",\n    \"genre\": \"Comedy\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/movies/6661d006abd0365fd8c2a8fe",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"movies",
+						"6661d006abd0365fd8c2a8fe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/movies/:id/reviews",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/movies/6661c4d659b79bd78d274011/reviews",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"movies",
+						"6661c4d659b79bd78d274011",
+						"reviews"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/movies/:id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjFjZThjYWJkMDM2NWZkOGMyYThmYiIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzE3Njg1OTE1fQ._hIVW-ZFfzTVtnKyhOHI4jMhq2OuzN2pkVXyFG_6pWc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/movies/6661d120abd0365fd8c2a905",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"movies",
+						"6661d120abd0365fd8c2a905"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/reviews",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjFkMTZmYWJkMDM2NWZkOGMyYTkwYiIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzE3Njg2NjQ4fQ.GzhGcUCJRRCdDPWIuwZK7HWa7Dypmqw_0gyZ8cSiwpc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"movieId\": \"6661d006abd0365fd8c2a8fe\",\n  \"rating\": 10,\n  \"comment\": \"It is funny all the way , never a dull moment . They managed to sneak in touching moments too . These penguins are wily & go-getters . Nobody can mess with them . Kowalski is tech support , skipper is leader (obviously) , rico is worker & private is sincere eager follower . They can and do outwit everybody . I remember in 'madagascar 3' where skipper said 'you only get one chance at first impression' after hippo lady could not break the door . Some people are saying it as hard selling and by-product of successful 'madagascar' franchise . But , this is thoughtfully scripted . Full entertainment for family . Dialogues are glib and mocking .\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/reviews",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"reviews"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/reviews",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/reviews",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"reviews"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/reviews/:id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/reviews/6661d29dabd0365fd8c2a912",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"reviews",
+						"6661d29dabd0365fd8c2a912"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/reviews/:id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjFkMTZmYWJkMDM2NWZkOGMyYTkwYiIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzE3Njg2NjQ4fQ.GzhGcUCJRRCdDPWIuwZK7HWa7Dypmqw_0gyZ8cSiwpc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"rating\": \"9.5\",\n    \"comment\": \"It is funny all the way , never a dull moment! They managed to sneak in touching moments too . These penguins are wily & go-getters . Nobody can mess with them . Kowalski is tech support , skipper is leader (obviously) , rico is worker & private is sincere eager follower . They can and do outwit everybody . I remember in 'madagascar 3' where skipper said 'you only get one chance at first impression' after hippo lady could not break the door . Some people are saying it as hard selling and by-product of successful 'madagascar' franchise . But , this is thoughtfully scripted . Full entertainment for family . Dialogues are glib and mocking.\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/reviews/6661d29dabd0365fd8c2a912",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"reviews",
+						"6661d29dabd0365fd8c2a912"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/reviews/:id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NjFjZThjYWJkMDM2NWZkOGMyYThmYiIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzE3Njg1OTE1fQ._hIVW-ZFfzTVtnKyhOHI4jMhq2OuzN2pkVXyFG_6pWc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/reviews/6661c63459b79bd78d274021",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"reviews",
+						"6661c63459b79bd78d274021"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "URL",
+			"value": "http://localhost:3000",
+			"type": "string"
+		}
+	]
+}
